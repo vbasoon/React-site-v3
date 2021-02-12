@@ -2,10 +2,16 @@ import React from 'react'
 
 const Navbar = () => {
    return (
-      <div>
+      <>
+         <Nav>
+            <NavbarContainer>
+               <NavLogo>
 
-      </div>
+               </NavLogo>
+            </NavbarContainer>
+         </Nav>
+      </>
    )
 }
 
-export default Navbar
+export default Navbar;
