@@ -8,6 +8,7 @@ import {
    NavItem,
    NavLinks
 } from './NavElements'
+import { FaBars } from 'react-icons/fa'
 
 const Navbar = () => {
    return (
@@ -18,7 +19,7 @@ const Navbar = () => {
                   <h1>Logo</h1>
                </NavLogo>
                <MobileIcon>
-                  <FaBars />
+
                </MobileIcon>
                <NavMenu>
                   <NavItem>
@@ -26,6 +27,9 @@ const Navbar = () => {
                   </NavItem>
                </NavMenu>
             </NavbarContainer>
+            <MobileIcon>
+               <FaBars />
+            </MobileIcon>
          </Nav>
       </>
    )
