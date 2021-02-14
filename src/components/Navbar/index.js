@@ -6,7 +6,9 @@ import {
    MobileIcon,
    NavMenu,
    NavItem,
-   NavLinks
+   NavLinks,
+   NavBtn,
+   NavBtnLink
 } from './NavElements'
 import { FaBars } from 'react-icons/fa'
 
@@ -16,16 +18,31 @@ const Navbar = () => {
          <Nav>
             <NavbarContainer>
                <NavLogo to='/'>
-                  <h1>Logo</h1>
+                  <h1>LCoin</h1>
                </NavLogo>
                <MobileIcon>
                   <FaBars />
                </MobileIcon>
                <NavMenu>
                   <NavItem>
-                     <NavLinks to="about">About</NavLinks>
+                     <NavLinks to="/about">Get Started</NavLinks>
+                  </NavItem>
+                  <NavItem>
+                     <NavLinks to="free">Free Coin</NavLinks>
+                  </NavItem>
+                  <NavItem>
+                     <NavLinks to="/wallet">Wallet</NavLinks>
+                  </NavItem>
+                  <NavItem>
+                     <NavLinks to="/mine">How to Get</NavLinks>
+                  </NavItem>
+                  <NavItem>
+                     <NavLinks to="/shop">Buy</NavLinks>
                   </NavItem>
                </NavMenu>
+               <NavBtn>
+                  <NavBtnLink>Contact me!</NavBtnLink>
+               </NavBtn>
             </NavbarContainer>
 
          </Nav>
