@@ -9,7 +9,7 @@ import {
    NavLinks,
    NavBtn,
    NavBtnLink
-} from './NavElements'
+} from './NavElements.js'
 import { FaBars } from 'react-icons/fa'
 
 const Navbar = ({ toggle }) => {
