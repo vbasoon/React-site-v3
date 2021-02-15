@@ -5,8 +5,11 @@ import {
    CloseIcon,
    SidebarWrapper,
    SidebarMenu,
-   SidebarLink
+   SidebarLink,
+   SideBtnWrap,
+   SidebarRoute
 } from './SidebarElements'
+
 
 const Sidebar = () => {
    return (
@@ -22,6 +25,9 @@ const Sidebar = () => {
                <SidebarLink to='/mine'>How to Get</SidebarLink>
                <SidebarLink to='/shop'>Buy</SidebarLink>
             </SidebarMenu>
+            <SideBtnWrap>
+               <SidebarRoute to="/contact">Contact</SidebarRoute>
+            </SideBtnWrap>
          </SidebarWrapper>
       </SidebarContainer>
    )
