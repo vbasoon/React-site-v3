@@ -12,8 +12,9 @@ align-items: center;
 top: 0;
 left: 0;
 transition: 0.3s ease-in-out;
-opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
-top: ${({ isOpen }) => (isOpen ? '0' : '-100%')}; 
+/* opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
+top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};  */
+top: 0;
 `;
 
 export const CloseIcon = styled(FaTimes)`
@@ -29,3 +30,11 @@ font-size: 3rem;
 cursor: pointer;
 outline: none;   
 `;
+
+export const SidebarWrapper = styled.div`
+position: absolute;`;
+
+export const SidebarMenu = styled.div``;
+
+export const SidebarLink = styled.div`
+color: white`;
