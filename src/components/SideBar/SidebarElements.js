@@ -43,7 +43,7 @@ grid-template-column: 1fr;
 grid-template-row: repeat(6, 80px);
 text-align: center;
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 766px) {
    grid-template-rows: repeat(6, 60px);
 }
 `;

@@ -11,22 +11,42 @@ import {
 } from './SidebarElements'
 
 
-const Sidebar = () => {
+const Sidebar = ({ isOpen, toggle }) => {
    return (
-      <SidebarContainer>
+      <SidebarContainer isOpen={isOpen} onClick={toggle}>
          <Icon>
-            <CloseIcon />
+            <CloseIcon onClick={toggle} />
          </Icon>
          <SidebarWrapper>
             <SidebarMenu>
-               <SidebarLink to='/about'>Get Started</SidebarLink>
-               <SidebarLink to='free'>Free Coin</SidebarLink>
-               <SidebarLink to='/wallet'>Wallet</SidebarLink>
-               <SidebarLink to='/mine'>How to Get</SidebarLink>
-               <SidebarLink to='/shop'>Buy</SidebarLink>
+               <SidebarLink
+                  to='about'
+                  onClick={toggle}>
+                  Get Started
+               </SidebarLink>
+               <SidebarLink
+                  to='free'
+                  onClick={toggle}>
+                  Free Coin
+               </SidebarLink>
+               <SidebarLink
+                  to='wallet'
+                  onClick={toggle}>
+                  Wallet
+               </SidebarLink>
+               <SidebarLink
+                  to='mine'
+                  onClick={toggle}>
+                  How to Get
+               </SidebarLink>
+               <SidebarLink
+                  to='shop'
+                  onClick={toggle}>
+                  Buy
+               </SidebarLink>
             </SidebarMenu>
             <SideBtnWrap>
-               <SidebarRoute to="/contact">Contact</SidebarRoute>
+               <SidebarRoute to="contact">Contact</SidebarRoute>
             </SideBtnWrap>
          </SidebarWrapper>
       </SidebarContainer>
