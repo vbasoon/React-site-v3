@@ -34,14 +34,11 @@ const Navbar = ({ toggle }) => {
                      <NavLinks to="wallet">Wallet</NavLinks>
                   </NavItem>
                   <NavItem>
-                     <NavLinks to="mine">How to Get</NavLinks>
-                  </NavItem>
-                  <NavItem>
                      <NavLinks to="shop">Buy</NavLinks>
                   </NavItem>
                </NavMenu>
                <NavBtn>
-                  <NavBtnLink>Contact me!</NavBtnLink>
+                  <NavBtnLink>Contact US!</NavBtnLink>
                </NavBtn>
             </NavbarContainer>
 
