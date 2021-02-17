@@ -28,7 +28,7 @@ const Navbar = ({ toggle }) => {
                      <NavLinks to="/about">Get Started</NavLinks>
                   </NavItem>
                   <NavItem>
-                     <NavLinks to="free">Free Coin</NavLinks>
+                     <NavLinks to="free">Free Coins</NavLinks>
                   </NavItem>
                   <NavItem>
                      <NavLinks to="wallet">Wallet</NavLinks>

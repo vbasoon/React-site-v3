@@ -38,7 +38,7 @@ const HeroSection = () => {
                Connect with Us!
          </HeroTitle>
             <HeroText>
-               Contact with Us and Get Free 100 000 LCoint on your wallet!!!
+               Contact with Us and Get Free 100 000 LCoins on your wallet!!!
          </HeroText>
             <HeroBtnWrapper>
                <Button
