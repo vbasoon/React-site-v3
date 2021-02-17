@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const InfoContainer = styled.div`
 color: #fff;
-background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '010606')};
+background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#010606')};
 
 @media screen and (max-width: 768px) {
    padding: 100px 0;
@@ -58,24 +58,26 @@ export const TopLine = styled.p`
 `
 
 export const  Title = styled.h2`
-   color: #000;
+   /*color: #000;*/
    margin-bottom: 24px;
    font-size: 48px;
    line-height: 1.1;
    font-weight: 600;
-   /*color: ${({ lightText}) => (lightText ? '#f7f8fa' : '010606')};*/
+   color: ${({ lightText}) => (lightText ? '#f7f8fa' : '#010606')};
+   /*color: ${({ lightText}) => (lightText ? '#000' : '010606')};*/
 
    @media screen and (max-width: 480px) {
       font-size: 32px;
    }
 `
 export const  Subtitle = styled.p`
-   color: #000;
+   /*color: #000;*/
    max-width: 440px;
    margin-bottom: 35px;
    font-size: 18px;
    line-height: 24px;
-   /*color: ${({darkText}) => (darkText ? '#010606' : '#fff')};*/
+   color: ${({darkText}) => (darkText ? '#010606' : '#fff')};
+   /*color: ${({darkText}) => (darkText ? '#000' : '#fff')};*/
 `
 export const  BtnWrapper = styled.div`
    display: flex;
