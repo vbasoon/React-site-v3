@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { Link as LinkR } from 'react-router-dom'
 
 export const InfoContainer = styled.div`
 color: #fff;
@@ -64,7 +63,7 @@ export const  Title = styled.h2`
    font-size: 48px;
    line-height: 1.1;
    font-weight: 600;
-   color: ${({ lightText}) => (lightText ? '#f7f8fa' : '010606')};
+   /*color: ${({ lightText}) => (lightText ? '#f7f8fa' : '010606')};*/
 
    @media screen and (max-width: 480px) {
       font-size: 32px;
@@ -89,6 +88,7 @@ export const  ImgWrapper = styled.div`
 
 export const Img = styled.img`
    width: 100%;
+   height: 100%;
    margin: 0 0 10px 0;
    padding-right: 0;
-   `
+`

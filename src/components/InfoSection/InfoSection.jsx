@@ -14,6 +14,7 @@ import {
    Img, 
    ImgWrapper 
 } from './InfoElements'
+import image1 from '../../images/svg-1.svg'
 
 const InfoSection = ({
    lightBg, 
@@ -25,7 +26,7 @@ const InfoSection = ({
    darkText, 
    description, 
    buttonLabel, 
-   img, 
+   image, 
    alt 
 }) => {
    return (
@@ -45,14 +46,12 @@ const InfoSection = ({
                   </Column1>
                   <Column2>
                      <ImgWrapper>
-                     <Img src={img} alt={alt}/>
+                        <Img src={image1} alt={alt}/>
                      </ImgWrapper>
                   </Column2>
                </InfoRow>
             </InfoWrapper>
          </InfoContainer>
-        
-         
       </>
    )
 }
