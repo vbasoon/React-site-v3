@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import {
    Nav,
    NavbarContainer,
@@ -11,11 +11,26 @@ import {
    NavBtnLink
 } from './NavElements.js'
 import { FaBars } from 'react-icons/fa'
+// import {iconContext} from '' 
 
 const Navbar = ({ toggle }) => {
+   const [scrollNav, setScrollNav] = useState(false)
+
+   const changeNav = () => {
+      if(window.scrollY >= 80) {
+         setScrollNav(true)
+      } else {
+         setScrollNav(false)
+      }
+   }
+
+   useEffect(() => {
+      window.addEventListener('scroll', changeNav)
+   }, []);  
+
    return (
       <>
-         <Nav>
+         <Nav scrollNav={scrollNav}>
             <NavbarContainer>
                <NavLogo to='/'>
                   <h1>LCoin</h1>
