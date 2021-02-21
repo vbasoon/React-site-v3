@@ -48,7 +48,16 @@ const Navbar = ({ toggle }) => {
                </MobileIcon>
                <NavMenu>
                   <NavItem>
-                     <NavLinks to="/about">Get Started</NavLinks>
+                     <NavLinks 
+                        to="about"
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        exact='true'
+                        offset={-80}
+                     >
+                        Get Started
+                     </NavLinks>
                   </NavItem>
                   <NavItem>
                      <NavLinks to="free">Free Coins</NavLinks>
@@ -61,7 +70,7 @@ const Navbar = ({ toggle }) => {
                   </NavItem>
                </NavMenu>
                <NavBtn>
-                  <NavBtnLink>Contact US!</NavBtnLink>
+                  <NavBtnLink to="/signup">Sign Up!</NavBtnLink>
                </NavBtn>
             </NavbarContainer>
 
