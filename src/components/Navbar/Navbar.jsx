@@ -49,7 +49,7 @@ const Navbar = ({ toggle }) => {
                <NavMenu>
                   <NavItem>
                      <NavLinks 
-                        to="about"
+                        to="started"
                         smooth={true}
                         duration={500}
                         spy={true}
@@ -60,13 +60,34 @@ const Navbar = ({ toggle }) => {
                      </NavLinks>
                   </NavItem>
                   <NavItem>
-                     <NavLinks to="free">Free Coins</NavLinks>
+                     <NavLinks
+                        to="started"
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        exact='true'
+                        offset={-80}
+                        >Free Coins</NavLinks>
                   </NavItem>
                   <NavItem>
-                     <NavLinks to="wallet">Wallet</NavLinks>
+                     <NavLinks
+                        to="started"
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        exact='true'
+                        offset={-80}
+                        >Wallet</NavLinks>
                   </NavItem>
                   <NavItem>
-                     <NavLinks to="shop">Buy</NavLinks>
+                     <NavLinks 
+                        to="started"
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        exact='true'
+                        offset={-80}
+                        >Buy</NavLinks>
                   </NavItem>
                </NavMenu>
                <NavBtn>

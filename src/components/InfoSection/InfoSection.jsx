@@ -14,7 +14,6 @@ import {
    Img, 
    ImgWrapper 
 } from './InfoElements'
-import image1 from '../../images/svg-1.svg'
 
 const InfoSection = ({
    lightBg, 
@@ -43,7 +42,7 @@ const InfoSection = ({
                         <Title lightText={lightText}>{title}</Title>
                         <Subtitle darkText={darkText}>{description}</Subtitle>
                         <BtnWrapper>
-                           <Button to='home'
+                           <Button to='/'
                               smooth={true}
                               duration={500}
                               spy={true}
